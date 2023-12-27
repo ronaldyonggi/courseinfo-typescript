@@ -19,3 +19,4 @@ interface CoursePartBackground extends CoursePartBase {
     kind: "background"
 }
 
+export type CoursePart = CoursePartBasic | CoursePartGroup | CoursePartBackground;
