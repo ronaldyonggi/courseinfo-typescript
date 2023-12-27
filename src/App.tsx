@@ -37,6 +37,12 @@ const App = () => {
 
   const totalExercises = courseParts.reduce((sum, part) => sum + part.exerciseCount, 0);
 
+  // Helper function for exhaustive type checking
+  const assertNever = (value: never): never => {
+    throw new Error(`Unhandled discriminated union member: ${JSON.stringify(value)}`);
+  };
+
+
   return (
     <div>
       <Header courseName={courseName} />
