@@ -25,4 +25,4 @@ interface CoursePartSpecial extends CoursePartBase {
     kind: "special"
 }
 
-export type CoursePart = CoursePartBasic | CoursePartGroup | CoursePartBackground;
+export type CoursePart = CoursePartBasic | CoursePartGroup | CoursePartBackground | CoursePartSpecial;
