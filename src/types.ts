@@ -4,7 +4,7 @@ interface CoursePartBase {
 }
 
 interface CoursePartBasic extends CoursePartBase {
-    description: string;
+    description?: string;
     kind: "basic"
 }
 
@@ -14,7 +14,7 @@ interface CoursePartGroup extends CoursePartBase {
 }
 
 interface CoursePartBackground extends CoursePartBase {
-    description: string;
+    description?: string;
     backgroundMaterial: string;
     kind: "background"
 }
